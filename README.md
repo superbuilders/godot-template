@@ -217,7 +217,9 @@ Typically, if you are creating any sort of game asset or level (tileset, UI elem
 
 **If you're new to Godot and would like a walkthrough to familiarize yourself with its IDE, Brackeys' tutorial is a great place to start:**
 
-https://www.youtube.com/watch?v=LOhfqjmasi0
+<a href="https://www.youtube.com/watch?v=LOhfqjmasi0" target="_blank">
+  <img src="https://img.youtube.com/vi/LOhfqjmasi0/maxresdefault.jpg" alt="Brackeys Godot Tutorial" width="600">
+</a>
 
 ### Example Of My Workflow
 
