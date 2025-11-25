@@ -1,0 +1,13 @@
+[gd_resource type="LabelSettings" load_steps=2 format=3 uid="uid://cfvaum6sdcoq0"]
+
+[ext_resource type="FontFile" uid="uid://d3xub03utd4xh" path="res://assets/fonts/m6x11.ttf" id="1_8g534"]
+
+[resource]
+font = ExtResource("1_8g534")
+font_size = 128
+outline_size = 32
+outline_color = Color(0, 0, 0, 1)
+shadow_size = 0
+shadow_color = Color(0, 0, 0, 0.5019608)
+shadow_offset = Vector2(16, 16)
+stacked_outline_count = 1

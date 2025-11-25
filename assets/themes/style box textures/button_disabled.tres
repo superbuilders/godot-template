@@ -1,0 +1,11 @@
+[gd_resource type="StyleBoxTexture" load_steps=2 format=3 uid="uid://dxntj8cbqi6xw"]
+
+[ext_resource type="Texture2D" uid="uid://mj3sr6q6550p" path="res://assets/sprites/Button 9slice.png" id="1_aa6ib"]
+
+[resource]
+texture = ExtResource("1_aa6ib")
+texture_margin_left = 48.0
+texture_margin_top = 48.0
+texture_margin_right = 48.0
+texture_margin_bottom = 48.0
+region_rect = Rect2(288, 0, 96, 96)

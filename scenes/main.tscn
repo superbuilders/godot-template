@@ -1,0 +1,172 @@
+[gd_scene load_steps=9 format=3 uid="uid://ch81su7nh77vx"]
+
+[ext_resource type="Texture2D" uid="uid://b3omk2pr37yax" path="res://assets/sprites/Space Background.png" id="1_o5qli"]
+[ext_resource type="Theme" uid="uid://27e6ukqqwp4j" path="res://assets/themes/style box textures/Classic.tres" id="1_tefeu"]
+[ext_resource type="LabelSettings" uid="uid://4v54i1s7nfkp" path="res://assets/label settings/Huge.tres" id="2_0wfyh"]
+[ext_resource type="LabelSettings" uid="uid://cfvaum6sdcoq0" path="res://assets/label settings/Big.tres" id="3_jyhfs"]
+[ext_resource type="LabelSettings" uid="uid://dytw1pr1mgugx" path="res://assets/label settings/Small.tres" id="3_sugp2"]
+[ext_resource type="PackedScene" uid="uid://ctlrohpu5t3w0" path="res://scenes/button_modular.tscn" id="4_tbgi4"]
+[ext_resource type="LabelSettings" uid="uid://bs0qjn8ksyhch" path="res://assets/label settings/Medium.tres" id="7_o6xl0"]
+[ext_resource type="Script" uid="uid://cw8kk70mayrwy" path="res://scripts/main.gd" id="8_main"]
+
+[node name="Main" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+theme = ExtResource("1_tefeu")
+script = ExtResource("8_main")
+
+[node name="Background" type="Sprite2D" parent="."]
+texture = ExtResource("1_o5qli")
+centered = false
+
+[node name="MainMenu" type="Control" parent="."]
+anchors_preset = 0
+offset_right = 1920.0
+offset_bottom = 1080.0
+mouse_filter = 2
+
+[node name="Title" type="Label" parent="MainMenu"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -960.0
+offset_top = 160.0
+offset_right = 960.0
+offset_bottom = 384.0
+grow_horizontal = 2
+text = "YOUR TITLE"
+label_settings = ExtResource("2_0wfyh")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Subtitle" type="Label" parent="MainMenu/Title"]
+self_modulate = Color(0.7529412, 0.7529412, 0.7529412, 1)
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -192.0
+offset_top = 224.0
+offset_right = 192.0
+offset_bottom = 336.0
+grow_horizontal = 2
+text = "Subtitle"
+label_settings = ExtResource("3_jyhfs")
+horizontal_alignment = 1
+
+[node name="ButtonPlay" parent="MainMenu" instance=ExtResource("4_tbgi4")]
+self_modulate = Color(0, 0.5019608, 0, 1)
+custom_minimum_size = Vector2(320, 160)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -160.0
+offset_top = 28.0
+offset_right = 160.0
+offset_bottom = 188.0
+grow_horizontal = 2
+grow_vertical = 2
+button_text = "PLAY"
+button_size = Vector2(320, 160)
+button_color = Color(0, 0.5019608, 0, 1)
+text_color = Color(0, 1, 0, 1)
+label_settings = ExtResource("3_jyhfs")
+text_offset = Vector2(4, 12)
+
+[node name="ButtonQuit" parent="MainMenu" instance=ExtResource("4_tbgi4")]
+self_modulate = Color(0.5019608, 0, 0, 1)
+custom_minimum_size = Vector2(320, 160)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -160.0
+offset_top = 220.0
+offset_right = 160.0
+offset_bottom = 380.0
+grow_horizontal = 2
+grow_vertical = 2
+button_text = "QUIT"
+button_size = Vector2(320, 160)
+button_color = Color(0.5019608, 0, 0, 1)
+text_color = Color(1, 0, 0, 1)
+label_settings = ExtResource("3_jyhfs")
+text_offset = Vector2(4, 12)
+
+[node name="Version" type="Label" parent="MainMenu"]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 6.0
+offset_top = -28.0
+offset_right = 46.0
+grow_vertical = 0
+text = "0.1"
+label_settings = ExtResource("3_sugp2")
+vertical_alignment = 2
+
+[node name="ProvidedBy" type="Label" parent="MainMenu"]
+self_modulate = Color(0.8784314, 0.8784314, 0.8784314, 1)
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -486.0
+offset_top = -88.0
+offset_right = 486.0
+offset_bottom = -32.0
+grow_horizontal = 2
+grow_vertical = 0
+text = "Godot template provided by Playcademy"
+label_settings = ExtResource("7_o6xl0")
+
+[node name="Game" type="Control" parent="."]
+anchors_preset = 0
+offset_top = -1080.0
+offset_right = 1920.0
+mouse_filter = 2
+
+[node name="Label" type="Label" parent="Game"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -11.5
+offset_right = 20.0
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "Your Game Here"
+label_settings = ExtResource("3_jyhfs")
+
+[node name="ButtonBack" parent="Game" instance=ExtResource("4_tbgi4")]
+custom_minimum_size = Vector2(320, 160)
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -160.0
+offset_top = -216.0
+offset_right = 160.0
+offset_bottom = -56.0
+grow_horizontal = 2
+grow_vertical = 0
+button_text = "BACK"
+button_size = Vector2(320, 160)
+text_color = Color(0.5019608, 0.5019608, 0.5019608, 1)
+label_settings = ExtResource("3_jyhfs")
+text_offset = Vector2(4, 12)

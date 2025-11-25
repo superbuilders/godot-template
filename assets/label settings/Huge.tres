@@ -1,0 +1,13 @@
+[gd_resource type="LabelSettings" load_steps=2 format=3 uid="uid://4v54i1s7nfkp"]
+
+[ext_resource type="FontFile" uid="uid://d3xub03utd4xh" path="res://assets/fonts/m6x11.ttf" id="1_yqest"]
+
+[resource]
+font = ExtResource("1_yqest")
+font_size = 256
+outline_size = 64
+outline_color = Color(0, 0, 0, 1)
+shadow_size = 0
+shadow_color = Color(0, 0, 0, 0.5019608)
+shadow_offset = Vector2(32, 32)
+stacked_outline_count = 1
